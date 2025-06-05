@@ -1,14 +1,18 @@
-// singleton
-// object.create
+// 1. singleton
+// 2. object.create
 
-//object literals
 
+
+
+
+
+// 3. object literals .................
 
 const mysym = Symbol("key1")
 console.log(typeof mysym);
 
 
-const jsuser = {
+const jsuser = { //object
     [mysym]: "mykey1", // access Symbol in object
     name: "Rajshekhar",
     age: 18,
@@ -18,8 +22,8 @@ const jsuser = {
     lastLoggedInDays: ["Monday", "Saturday"],
 }
 
-console.log(jsuser.email);
-console.log(jsuser["email"]);
+console.log(jsuser.email); // this mostly not used
+console.log(jsuser["email"]); // this mostly used
 console.log(jsuser[mysym]);
 
 jsuser.email = "rjshekharmscabss@gmail.com";
